@@ -19,6 +19,7 @@ main_page_head = '''
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
+            background-color: #FFF
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -86,6 +87,7 @@ main_page_head = '''
 '''
 
 
+
 # The main page layout and title bar
 main_page_content = '''
   <body>
@@ -104,10 +106,10 @@ main_page_content = '''
 
     <!-- Main Page Content -->
     <div class="container">
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-image: none; background-color: #1098F7; border: none">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a class="navbar-brand" href="#" style="text-shadow: none; color: #FFF">Fresh Tomatoes Movie Trailers</a>
           </div>
         </div>
       </div>
@@ -124,7 +126,7 @@ main_page_content = '''
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
-    <h2>{movie_title}</h2>
+    <h2 class="h2_title">{movie_title}</h2>
 </div>
 '''
 
